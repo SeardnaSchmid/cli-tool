@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Start CLI Tool",
+            "program": "${workspaceFolder}/dist/index.js",
+            "args": ["--name", "test"],  // Use the "args" field instead of "runtimeArgs"
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "node",
+            "env": {},
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}

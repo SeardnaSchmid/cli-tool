@@ -1,0 +1,22 @@
+{
+  "name": "cli-tool",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "bin": {
+    "my-cli-tool": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:clean": "yarn run build && node dist/index.js",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}
